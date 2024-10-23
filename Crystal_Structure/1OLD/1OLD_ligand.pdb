@@ -1,0 +1,31 @@
+HETATM    1  N   AAR A  25       0.754   6.434  -6.220  1.00  0.39           N  
+HETATM    2  CA  AAR A  25       0.664   6.525  -4.779  1.00  0.32           C  
+HETATM    3  CB  AAR A  25      -0.844   6.392  -4.422  1.00  0.28           C  
+HETATM    4  CG  AAR A  25      -1.227   6.456  -2.975  1.00  0.24           C  
+HETATM    5  CD  AAR A  25      -2.541   6.586  -2.368  1.00  0.26           C  
+HETATM    6  NE  AAR A  25      -2.316   6.440  -0.942  1.00  0.26           N  
+HETATM    7  CZ  AAR A  25      -3.253   6.252  -0.035  1.00  0.30           C  
+HETATM    8  NH1 AAR A  25      -2.867   6.144   1.219  1.00  0.32           N  
+HETATM    9  NH2 AAR A  25      -4.533   6.142  -0.343  1.00  0.37           N  
+HETATM   10  C   AAR A  25       1.595   5.502  -4.129  1.00  0.38           C  
+HETATM   11  O   AAR A  25       1.742   4.361  -4.550  1.00  0.54           O  
+HETATM   12  NT  AAR A  25       2.244   5.860  -3.042  1.00  0.60           N  
+HETATM   13  H2  AAR A  25       0.369   5.658  -6.676  1.00  0.54           H  
+HETATM   14  H   AAR A  25       1.187   7.159  -6.718  1.00  0.45           H  
+HETATM   15  HA  AAR A  25       0.999   7.503  -4.466  1.00  0.32           H  
+HETATM   16  HB2 AAR A  25      -1.204   5.443  -4.788  1.00  0.31           H  
+HETATM   17  HB3 AAR A  25      -1.327   7.225  -4.912  1.00  0.30           H  
+HETATM   18  HG2 AAR A  25      -0.771   7.351  -2.578  1.00  0.24           H  
+HETATM   19  HG3 AAR A  25      -0.892   5.521  -2.553  1.00  0.25           H  
+HETATM   20  HD2 AAR A  25      -3.166   5.767  -2.693  1.00  0.32           H  
+HETATM   21  HD3 AAR A  25      -2.984   7.541  -2.604  1.00  0.29           H  
+HETATM   22  HE  AAR A  25      -1.389   6.455  -0.622  1.00  0.31           H  
+HETATM   23 HH11 AAR A  25      -1.896   6.188   1.455  1.00  0.33           H  
+HETATM   24 HH12 AAR A  25      -3.555   5.987   1.927  1.00  0.38           H  
+HETATM   25 HH21 AAR A  25      -4.771   6.164  -1.314  1.00  0.41           H  
+HETATM   26 HH22 AAR A  25      -5.256   5.995   0.332  1.00  0.43           H  
+HETATM   27 HNT1 AAR A  25       2.147   6.771  -2.693  1.00  0.81           H  
+HETATM   28 HNT2 AAR A  25       2.811   5.216  -2.567  1.00  0.68           H  
+TER      29      AAR A  25                                                       
+ENDMDL
+END   

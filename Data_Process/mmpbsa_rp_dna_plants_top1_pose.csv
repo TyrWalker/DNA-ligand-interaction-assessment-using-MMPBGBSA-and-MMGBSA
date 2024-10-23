@@ -1,0 +1,17 @@
+ff,md_or_mini,solvation,free_energy,interior_dielectric,rp
+bsc1,md,implicit7,gbsa8,16,-0.2833969557903223
+bsc1,md,implicit7,gbsa8,20,-0.291348283674036
+bsc1,md,implicit7,pbsa,16,-0.13084047659275472
+bsc1,md,implicit7,pbsa,20,-0.14559349109751646
+bsc1,no,implicit7,gbsa8,16,-0.4535545429122902
+bsc1,no,implicit7,gbsa8,20,-0.454595123858732
+bsc1,no,implicit7,pbsa,16,-0.3219057854235963
+bsc1,no,implicit7,pbsa,20,-0.3266673380364618
+OL15,md,implicit7,gbsa8,16,-0.3281986722672531
+OL15,md,implicit7,gbsa8,20,-0.33577773436145153
+OL15,md,implicit7,pbsa,16,-0.19192244613336684
+OL15,md,implicit7,pbsa,20,-0.20768836067080382
+OL15,no,implicit7,gbsa8,16,-0.4193826770001271
+OL15,no,implicit7,gbsa8,20,-0.42065349203629165
+OL15,no,implicit7,pbsa,16,-0.24635469592913548
+OL15,no,implicit7,pbsa,20,-0.25244067119297575

@@ -1,0 +1,17 @@
+A  DT     1    A  DT     1
+A  DT     2    A  DT     2
+A  DG     3    A  DG     3
+A  DG     4    A  DG     4
+A  DT     5    A  DT     5
+A  DG     6    A  DG     6
+A  DG     7    A  DG     7
+A  DG     8    A  DG     8
+A  DT     9    A  DT     9
+A  DG    10    A  DG    10
+A  DG    11    A  DG    11
+A  DG    12    A  DG    12
+A  DT    13    A  DT    13
+A  DG    14    A  DG    14
+A  DG    15    A  DG    15
+A  DG    16    A  DG    16
+A  DT    17    A  DT    17

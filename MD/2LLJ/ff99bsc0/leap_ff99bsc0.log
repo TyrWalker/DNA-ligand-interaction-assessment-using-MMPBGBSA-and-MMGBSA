@@ -1,0 +1,221 @@
+-I: Adding /opt/amber/22/dat/leap/prep to search path.
+-I: Adding /opt/amber/22/dat/leap/lib to search path.
+-I: Adding /opt/amber/22/dat/leap/parm to search path.
+-I: Adding /opt/amber/22/dat/leap/cmd to search path.
+-f: Source /home/dejun/workspace/NLmmgbsa/results/dna/2LLJ/ff99bsc0/leap_ff99bsc0.in.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: /home/dejun/workspace/NLmmgbsa/results/dna/2LLJ/ff99bsc0/leap_ff99bsc0.in
+----- Source: /opt/amber/22/dat/leap/cmd/oldff/leaprc.ff99bsc0
+----- Source of /opt/amber/22/dat/leap/cmd/oldff/leaprc.ff99bsc0 done
+Log file: ./leap.log
+Loading parameters: /opt/amber/22/dat/leap/parm/parm99.dat
+Reading title:
+PARM99 for DNA,RNA,AA, organic molecules, Polariz.& LP incl.02/04/99
+Loading parameters: /opt/amber/22/dat/leap/parm/frcmod.ff99SB
+Reading force field modification type file (frcmod)
+Reading title:
+Modification/update of parm99.dat (Hornak & Simmerling)
+Loading parameters: /opt/amber/22/dat/leap/parm/frcmod.parmbsc0
+Reading force field modification type file (frcmod)
+Reading title:
+modifies parm99 for nucleic acids: see http://mmb.pcb.ub.es/PARMBSC0/
+Loading library: /opt/amber/22/dat/leap/lib/all_nucleic94.lib
+Loading library: /opt/amber/22/dat/leap/lib/all_amino94.lib
+Loading library: /opt/amber/22/dat/leap/lib/all_aminoct94.lib
+Loading library: /opt/amber/22/dat/leap/lib/all_aminont94.lib
+Loading library: /opt/amber/22/dat/leap/lib/DNA_CI.lib
+Loading library: /opt/amber/22/dat/leap/lib/ions94.lib
+Loading library: /opt/amber/22/dat/leap/lib/solvents.lib
+----- Source: /opt/amber/22/dat/leap/cmd/leaprc.water.tip3p
+----- Source of /opt/amber/22/dat/leap/cmd/leaprc.water.tip3p done
+Loading library: /opt/amber/22/dat/leap/lib/atomic_ions.lib
+Loading library: /opt/amber/22/dat/leap/lib/solvents.lib
+Loading parameters: /opt/amber/22/dat/leap/parm/frcmod.tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+This is the additional/replacement parameter set for TIP3P water
+Loading parameters: /opt/amber/22/dat/leap/parm/frcmod.ions1lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of monovalent ions for TIP3P water model (12-6 normal usage set)
+Loading parameters: /opt/amber/22/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+Loading parameters: /opt/amber/22/dat/leap/parm/frcmod.ions234lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for TIP3P water model (12-6 normal usage set)
+----- Source: /opt/amber/22/dat/leap/cmd/leaprc.gaff2
+----- Source of /opt/amber/22/dat/leap/cmd/leaprc.gaff2 done
+Log file: ./leap.log
+Loading parameters: /opt/amber/22/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.11, May 2016)
+Loading parameters: ./2LLJ_ligand.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+Using H(N)-modified Bondi radii
+Loading PDB file: ./2LLJ_receptor1.pdb
+  total atoms in file: 695
+Checking Unit.
+
+/opt/amber/22/bin/teLeap: Warning!
+The unperturbed charge of the unit (-20.000000) is not zero.
+
+/opt/amber/22/bin/teLeap: Note.
+Ignoring the warning from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 129 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+ (no restraints)
+Writing pdb file: /home/dejun/workspace/NLmmgbsa/results/dna/2LLJ/ff99bsc0/2LLJ_receptor_leap_ff99bsc0.pdb
+Loading Mol2 file: ./2LLJ_ligand.mol2
+Reading MOLECULE named MOL
+Checking Unit.
+
+/opt/amber/22/bin/teLeap: Warning!
+The unperturbed charge of the unit (4.002000) is not zero.
+
+/opt/amber/22/bin/teLeap: Note.
+Ignoring the warning from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 20 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	MOL	1
+  )
+ (no restraints)
+Writing pdb file: /home/dejun/workspace/NLmmgbsa/results/dna/2LLJ/ff99bsc0/2LLJ_ligand_leap_ff99bsc0.pdb
+Checking Unit.
+
+/opt/amber/22/bin/teLeap: Warning!
+The unperturbed charge of the unit (-15.998000) is not zero.
+
+/opt/amber/22/bin/teLeap: Note.
+Ignoring the warning from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 149 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	MOL	1
+  )
+ (no restraints)
+Writing pdb file: /home/dejun/workspace/NLmmgbsa/results/dna/2LLJ/ff99bsc0/2LLJ_complex_leap_ff99bsc0.pdb
+  Solute vdw bounding box:              29.083 47.130 29.892
+  Total bounding box for atom centers:  45.083 63.130 45.892
+  Solvent unit box:                     18.774 18.774 18.774
+  Total vdw box size:                   47.686 66.431 48.997 angstroms.
+  Volume: 155213.790 A^3 
+  Total mass 70542.348 amu,  Density 0.755 g/cc
+  Added 3518 residues.
+
+/opt/amber/22/bin/teLeap: Warning!
+addIons: 1st Ion & target unit have charges of the same sign:
+     unit charge = -15.998; ion1 charge = -1;
+     can't neutralize.
+16 Na+ ions required to neutralize.
+Adding 16 counter ions to "complex" using 1A grid
+Grid extends from solute vdw + 3.52  to  9.62
+Resolution:      1.00 Angstrom.
+Solvent present: replacing closest with ion
+	 when steric overlaps occur
+Calculating grid charges
+(Replacing solvent molecule)
+Placed Na+ in complex at (9.27, -13.47, 4.03).
+(Replacing solvent molecule)
+Placed Na+ in complex at (4.74, 14.72, -0.92).
+(Replacing solvent molecule)
+Placed Na+ in complex at (1.84, -6.89, 14.86).
+(Replacing solvent molecule)
+Placed Na+ in complex at (-1.19, -17.80, -1.08).
+(Replacing solvent molecule)
+Placed Na+ in complex at (15.15, 4.30, 12.19).
+(Replacing solvent molecule)
+Placed Na+ in complex at (14.10, 4.17, -4.01).
+(Replacing solvent molecule)
+Placed Na+ in complex at (11.74, 20.29, 9.85).
+(Replacing solvent molecule)
+Placed Na+ in complex at (-12.32, -10.56, -7.46).
+(Replacing solvent molecule)
+Placed Na+ in complex at (-8.34, 14.20, -4.45).
+(Replacing solvent molecule)
+Placed Na+ in complex at (15.58, -9.21, -1.56).
+(Replacing solvent molecule)
+Placed Na+ in complex at (-7.85, -12.28, 6.63).
+(Replacing solvent molecule)
+Placed Na+ in complex at (10.43, -23.34, -4.45).
+(Replacing solvent molecule)
+Placed Na+ in complex at (4.84, 8.34, -10.33).
+(Replacing solvent molecule)
+Placed Na+ in complex at (-11.31, 7.21, 2.92).
+(Replacing solvent molecule)
+Placed Na+ in complex at (8.11, -7.81, -8.89).
+(Replacing solvent molecule)
+Placed Na+ in complex at (10.43, 14.20, 14.33).
+
+Done adding ions.
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 149 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	MOL	1
+	WAT	3502
+  )
+ (no restraints)
+Writing pdb file: /home/dejun/workspace/NLmmgbsa/results/dna/2LLJ/ff99bsc0/2LLJ_complex_solv_leap_ff99bsc0.pdb
+   printing CRYST1 record to PDB file with box info
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 4; Notes = 3.

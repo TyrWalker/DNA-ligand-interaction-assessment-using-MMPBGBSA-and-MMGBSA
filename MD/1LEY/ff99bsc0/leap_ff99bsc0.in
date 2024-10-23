@@ -1,0 +1,20 @@
+source oldff/leaprc.ff99bsc0
+source leaprc.water.tip3p
+source leaprc.gaff2
+loadamberparams 1LEY_ligand.frcmod
+set default pbradii mbondi2
+receptor=loadpdb 1LEY_receptor1.pdb
+saveamberparm receptor /home/dejun/workspace/NLmmgbsa/results/dna/1LEY/ff99bsc0/1LEY_receptor_leap_ff99bsc0.prmtop /home/dejun/workspace/NLmmgbsa/results/dna/1LEY/ff99bsc0/1LEY_receptor_leap_ff99bsc0.inpcrd
+savepdb receptor /home/dejun/workspace/NLmmgbsa/results/dna/1LEY/ff99bsc0/1LEY_receptor_leap_ff99bsc0.pdb
+ligand=loadmol2 1LEY_ligand.mol2
+saveamberparm ligand /home/dejun/workspace/NLmmgbsa/results/dna/1LEY/ff99bsc0/1LEY_ligand_leap_ff99bsc0.prmtop /home/dejun/workspace/NLmmgbsa/results/dna/1LEY/ff99bsc0/1LEY_ligand_leap_ff99bsc0.inpcrd
+savepdb ligand /home/dejun/workspace/NLmmgbsa/results/dna/1LEY/ff99bsc0/1LEY_ligand_leap_ff99bsc0.pdb
+complex=combine {receptor ligand}
+saveamberparm complex /home/dejun/workspace/NLmmgbsa/results/dna/1LEY/ff99bsc0/1LEY_complex_leap_ff99bsc0.prmtop /home/dejun/workspace/NLmmgbsa/results/dna/1LEY/ff99bsc0/1LEY_complex_leap_ff99bsc0.inpcrd
+savepdb complex /home/dejun/workspace/NLmmgbsa/results/dna/1LEY/ff99bsc0/1LEY_complex_leap_ff99bsc0.pdb
+solvateBox complex TIP3PBOX 8.0
+addIons complex Cl- 0
+addIons complex Na+ 0
+saveamberparm complex /home/dejun/workspace/NLmmgbsa/results/dna/1LEY/ff99bsc0/1LEY_complex_solv_leap_ff99bsc0.prmtop /home/dejun/workspace/NLmmgbsa/results/dna/1LEY/ff99bsc0/1LEY_complex_solv_leap_ff99bsc0.inpcrd
+savepdb complex /home/dejun/workspace/NLmmgbsa/results/dna/1LEY/ff99bsc0/1LEY_complex_solv_leap_ff99bsc0.pdb
+quit

@@ -1,0 +1,16 @@
+A  DT     1    A  DT     1
+A  DA     2    A  DA     2
+A  DC     3    A  DC     3
+A  DG     4    A  DG     4
+A  DC     5    A  DC     5
+A  DG     6    A  DG     6
+A  DT     7    A  DT     7
+A  DA     8    A  DA     8
+B  DT     9    B  DT     9
+B  DA    10    B  DA    10
+B  DC    11    B  DC    11
+B  DG    12    B  DG    12
+B  DC    13    B  DC    13
+B  DG    14    B  DG    14
+B  DT    15    B  DT    15
+B  DA    16    B  DA    16

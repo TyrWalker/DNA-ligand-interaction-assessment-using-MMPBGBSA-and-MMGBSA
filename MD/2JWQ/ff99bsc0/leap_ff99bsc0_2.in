@@ -1,0 +1,21 @@
+# receptor, ligand2, complex
+source oldff/leaprc.ff99bsc0
+source leaprc.water.tip3p
+source leaprc.gaff2
+loadamberparams /home/dejun/workspace/NLmmgbsa/results/dna/2JWQ/ff99bsc0/2JWQ_ligand1.frcmod
+loadamberparams /home/dejun/workspace/NLmmgbsa/results/dna/2JWQ/ff99bsc0/2JWQ_ligand2.frcmod
+set default pbradii mbondi2
+receptor = loadpdb /home/dejun/workspace/NLmmgbsa/results/dna/2JWQ/ff99bsc0/2JWQ_receptor1.pdb
+ligand1 = loadmol2 /home/dejun/workspace/NLmmgbsa/results/dna/2JWQ/ff99bsc0/2JWQ_ligand1.mol2
+ligand2 = loadmol2 /home/dejun/workspace/NLmmgbsa/results/dna/2JWQ/ff99bsc0/2JWQ_ligand2.mol2
+saveamberparm receptor /home/dejun/workspace/NLmmgbsa/results/dna/2JWQ/ff99bsc0/2JWQ_receptor_leap_ff99bsc0.prmtop /home/dejun/workspace/NLmmgbsa/results/dna/2JWQ/ff99bsc0/2JWQ_receptor_leap_ff99bsc0.inpcrd
+savepdb receptor /home/dejun/workspace/NLmmgbsa/results/dna/2JWQ/ff99bsc0/2JWQ_receptor_leap_ff99bsc0.pdb
+complex = combine {receptor ligand2}
+saveamberparm complex /home/dejun/workspace/NLmmgbsa/results/dna/2JWQ/ff99bsc0/2JWQ_complex_leap_ff99bsc0.prmtop /home/dejun/workspace/NLmmgbsa/results/dna/2JWQ/ff99bsc0/2JWQ_complex_leap_ff99bsc0.inpcrd
+savepdb complex /home/dejun/workspace/NLmmgbsa/results/dna/2JWQ/ff99bsc0/2JWQ_complex_leap_ff99bsc0.pdb
+solvateBox complex TIP3PBOX 8.0
+addIons complex Cl- 0
+addIons complex Na+ 0
+saveamberparm complex /home/dejun/workspace/NLmmgbsa/results/dna/2JWQ/ff99bsc0/2JWQ_complex_solv_leap_ff99bsc0.prmtop /home/dejun/workspace/NLmmgbsa/results/dna/2JWQ/ff99bsc0/2JWQ_complex_solv_leap_ff99bsc0.inpcrd
+savepdb complex /home/dejun/workspace/NLmmgbsa/results/dna/2JWQ/ff99bsc0/2JWQ_complex_solv_leap_ff99bsc0.pdb
+quit

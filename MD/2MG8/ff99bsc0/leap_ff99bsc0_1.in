@@ -1,0 +1,26 @@
+# receptor1, ligand2, complex12
+source oldff/leaprc.ff99bsc0
+source leaprc.water.tip3p
+source leaprc.gaff2
+loadamberparams /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_ligand1.frcmod
+loadamberparams /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_ligand2.frcmod
+set default pbradii mbondi2
+receptor = loadpdb /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_receptor1.pdb
+ligand1 = loadmol2 /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_ligand1.mol2
+ligand2 = loadmol2 /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_ligand2.mol2
+receptor1 = combine {receptor ligand1}
+saveamberparm receptor1 /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_receptor1_leap_ff99bsc0.prmtop /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_receptor1_leap_ff99bsc0.inpcrd
+savepdb receptor1 /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_receptor1_leap_ff99bsc0.pdb
+saveamberparm ligand1 /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_ligand1_leap_ff99bsc0.prmtop /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_ligand1_leap_ff99bsc0.inpcrd
+savepdb ligand1 /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_ligand1_leap_ff99bsc0.pdb
+saveamberparm ligand2 /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_ligand2_leap_ff99bsc0.prmtop /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_ligand2_leap_ff99bsc0.inpcrd
+savepdb ligand2 /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_ligand2_leap_ff99bsc0.pdb
+complex12 = combine {receptor ligand1 ligand2}
+saveamberparm complex12 /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_complex12_leap_ff99bsc0.prmtop /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_complex12_leap_ff99bsc0.inpcrd
+savepdb complex12 /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_complex12_leap_ff99bsc0.pdb
+solvateBox complex12 TIP3PBOX 8.0
+addIons complex12 Cl- 0
+addIons complex12 Na+ 0
+saveamberparm complex12 /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_complex12_solv_leap_ff99bsc0.prmtop /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_complex12_solv_leap_ff99bsc0.inpcrd
+savepdb complex12 /home/dejun/workspace/NLmmgbsa/results/dna/2MG8/ff99bsc0/2MG8_complex12_solv_leap_ff99bsc0.pdb
+quit

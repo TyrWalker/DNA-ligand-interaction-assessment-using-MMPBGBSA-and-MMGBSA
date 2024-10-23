@@ -1,0 +1,93 @@
+
+Welcome to antechamber 22.0: molecular input file processor.
+
+Info: acdoctor mode is on: check and diagnose problems in the input file.
+Info: The atom type is set to gaff2; the options available to the -at flag are
+      gaff, gaff2, amber, bcc, and sybyl.
+
+-- Check Format for sdf File --
+   Status: pass
+Info: Determining atomic numbers from atomic symbols which are case sensitive.
+-- Check Unusual Elements --
+   Status: pass
+-- Check Open Valences --
+   Status: pass
+-- Check Geometry --
+      for those bonded   
+      for those not bonded   
+   Status: pass
+-- Check Weird Bonds --
+   Status: pass
+-- Check Number of Units --
+   Status: pass
+acdoctor mode has completed checking the input file.
+
+Running: /opt/amber/22/bin/bondtype -j full -i ANTECHAMBER_BOND_TYPE.AC0 -o ANTECHAMBER_BOND_TYPE.AC -f ac
+
+Running: /opt/amber/22/bin/atomtype -i ANTECHAMBER_AC.AC0 -o ANTECHAMBER_AC.AC -p gaff2
+Info: Total number of electrons: 284; net charge: 1
+
+Running: /opt/amber/22/bin/sqm -O -i sqm.in -o sqm.out
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 0, Name: N1).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 1, Name: C1).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 2, Name: C2).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 4, Name: C3).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 5, Name: C4).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 34, Name: C27).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 35, Name: C28).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 36, Name: C29).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 37, Name: C30).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 38, Name: C31).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 39, Name: O1).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 40, Name: C32).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 41, Name: H1).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 42, Name: H2).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 43, Name: H3).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 44, Name: H4).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 45, Name: H5).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 46, Name: H6).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 47, Name: H7).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 48, Name: H8).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 49, Name: H9).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 50, Name: H10).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 63, Name: H23).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 64, Name: H24).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 65, Name: H25).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 66, Name: H26).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 67, Name: H27).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 68, Name: H28).
+      Automatically increasing to 10000.
+Info: The number of path atoms exceeded MAXPATHATOMNUM for atom (ID: 69, Name: H29).
+      Automatically increasing to 10000.
+
+Running: /opt/amber/22/bin/am1bcc -i ANTECHAMBER_AM1BCC_PRE.AC -o ANTECHAMBER_AM1BCC.AC -f ac -p /opt/amber/22/dat/antechamber/BCCPARM.DAT -s 2 -j 1
+
+Running: /opt/amber/22/bin/atomtype -f ac -p bcc -o ANTECHAMBER_AM1BCC.AC -i ANTECHAMBER_AM1BCC_PRE.AC
+
