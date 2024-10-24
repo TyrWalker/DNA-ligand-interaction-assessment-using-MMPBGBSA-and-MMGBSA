@@ -1,0 +1,14 @@
+pdbid,num_het,het_record,resolution,num_res_rec,nuc_type,type,miss_res,met_lig,comments,met_res_exist,het_lig_name,pdbbind_pK,pdbbind_type,pdbbind_value
+1DB6,1,['1DB6_A_AAR_23.pdb'],NMR,22,"['DA', 'DC', 'DG', 'DT']",dna,0,0,,0,['AAR'],4,Kd,0.1mM
+1P96,1,['1P96_A_DDI_21.pdb'],NMR,26,"['DA', 'DC', 'DG', 'DT']",dna,0,0,,0,['DDI'],5.595166283,Kd,2.54uM
+1QV4,1,['1QV4_B_MBB_25.pdb'],2.5,24,"['DA', 'DC', 'DG', 'DT']",dna,0,0,,0,['MBB'],6.906578315,Kd,124nM
+1QV8,1,['1QV8_B_BBZ_25.pdb'],2.5,24,"['DA', 'DC', 'DG', 'DT']",dna,0,0,,0,['BBZ'],6.943095149,Kd,114nM
+1R4E,1,['1R4E_A_DDI_15.pdb'],NMR,26,"['DA', 'DC', 'DG', 'DT']",dna,0,0,,0,['DDI'],5.273272791,Kd,5.33uM
+6J2W,1,['6J2W_A_B2U_101.pdb'],NMR,19,"['DA', 'DC', 'DG', 'DT']",dna,0,0,,0,['B2U'],5.853871964,Kd,1.4uM
+6SX3,1,['6SX3_A_LWQ_101.pdb'],NMR,31,"['DA', 'DC', 'DG']",dna,0,0,,0,['LWQ'],5.15490196,Kd,7uM
+2MB3,1,['2MB3_A_L2H_25.pdb'],NMR,24,"['DA', 'DG', 'DT']",dna,0,0,,0,['L2H'],5.13076828,IC50,7.4uM
+6JJ0,1,['6JJ0_A_BO6_101.pdb'],NMR,22,"['DA', 'DG', 'DT']",dna,0,0,,0,['BO6'],7.443697499,Kd,36nM
+2JWQ,2,"['2JWQ_B_MM0_29.pdb', '2JWQ_B_MM0_30.pdb']",NMR,28,"['DA', 'DG', 'DT']",dna,0,0,doule same ligands ,0,"['MM0', 'MM0']",6.428291168,IC50,373nM
+2MG8,2,"['2MG8_B_XR2_101.pdb', '2MG8_B_XR2_102.pdb']",NMR,30,"['DA', 'DC', 'DG', 'DT']",dna,0,0,doule same ligands £¨less than 8A£©,0,"['XR2', 'XR2']",6.015472687,Kd,965nM
+2D55,7,"['2D55_C_DVA_2.pdb', '2D55_C_DVA_8.pdb', '2D55_C_MVA_11.pdb', '2D55_C_MVA_5.pdb', '2D55_C_PXZ_6.pdb', '2D55_C_SAR_10.pdb', '2D55_C_SAR_4.pdb']",3,20,"['DA', 'DC', 'DG', 'DT', 'PRO', 'THR']",dna,0,0,,0,"['DVA', 'DVA', 'MVA', 'MVA', 'PXZ', 'SAR', 'SAR']",7.455931956,IC50,35nM
+316D,7,"['316D_C_DVA_2.pdb', '316D_C_DVA_8.pdb', '316D_C_MVA_11.pdb', '316D_C_MVA_5.pdb', '316D_C_PXF_6.pdb', '316D_C_SAR_10.pdb', '316D_C_SAR_4.pdb']",3,20,"['DA', 'DC', 'DG', 'DT', 'PRO', 'THR']",dna,0,0,,0,"['DVA', 'DVA', 'MVA', 'MVA', 'PXF', 'SAR', 'SAR']",7.110138279,IC50,77.6nM
